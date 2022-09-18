@@ -2,7 +2,6 @@
 
 namespace IsaEken\Envman;
 
-use Illuminate\Database\Eloquent\Collection;
 use IsaEken\Envman\Models\Override;
 
 class Memory
@@ -52,7 +51,7 @@ class Memory
 
     public function save(): self
     {
-        file_put_contents($this->filePath(), "<?php return " . var_export(static::$memory, true) . ";");
+        file_put_contents($this->filePath(), '<?php return '.var_export(static::$memory, true).';');
 
         return $this;
     }

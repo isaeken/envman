@@ -3,10 +3,8 @@
 namespace IsaEken\Envman\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Console\ConfirmableTrait;
 use IsaEken\Envman\Facades\Envman;
 use IsaEken\Envman\Memory;
-use IsaEken\Envman\Models\Override;
 use Symfony\Component\Console\Attribute\AsCommand;
 
 #[AsCommand(name: 'envman:cache')]
