@@ -6,6 +6,7 @@
         "laravel",
         "envman"
     ],
+    "version": "v1.0",
     "homepage": "https://github.com/isaeken/envman",
     "license": "MIT",
     "authors": [
