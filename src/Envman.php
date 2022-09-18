@@ -46,6 +46,7 @@ class Envman
     public function resetConfig(string $key): self
     {
         Override::current()->where('key', $key)->delete();
+
         return $this;
     }
 }
